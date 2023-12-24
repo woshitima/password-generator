@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Password Generator</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="texts">
+                <h1>Generate a <br><span>random password</span></h1>
+                <h4>Get a unique password and keep your privacy.</h4>
+                <input type="number" placeholder="Input the password length" id="pass-length" value=''><br><br>
+                <button onclick="generatePassword()">Generate passwords</button>
+            </div>
+            <div id="passwords">
+                <p id="password-one" onclick="copyPassword()"><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span></p> <!-- had to add this ugly text in order to get a blank space -->
+                <p id="password-two" onclick="copyPassword()"><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span></p>
+            <div>
+            <script src="index.js"></script>
+        </div>
+    </body>
+</html>
